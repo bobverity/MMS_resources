@@ -8,7 +8,7 @@ This page lists a bunch of resources that I find useful across the following are
 
 This is a very basic list, but I will try to update when I can.
 
-## Study Design
+## Study Design for MMS
 
 ### Software and web tools
 
@@ -23,11 +23,18 @@ This is a very basic list, but I will try to update when I can.
 - The [Plasmo-Gen-Epi](https://www.plasmogenepi.org/) online course ["From Data to Insight"](https://www.plasmogenepi.org/OnlineCourse) is available in three languages, and gives excellent background on the objectives of MMS including high-level study design concepts.
 - The book ["Power Analysis: An Introduction For the Life Sciences"](https://www.amazon.com/Power-Analysis-Nick-Colegrave/dp/0198846630) is a great introduction to power analysis. Not too thick and intimidating, it still gets into some more subtle ideas such as the "winner's curse" and other strange phenomena. I'd recommend this to anyone who wants to take their study design knowledge that little bit further.
 
-## Data Repositories
+## Data Repositories of DR Markers
 
 These are some popular and public sources of data on molecular markers of antimalarial resistance:
 
-- The [WWARN Artemisinin Molecular Surveyor](https://visualizer.iddo.org/map/k13) and the related [WWARN Partner Drug Molecular Surveyor](https://visualizer.iddo.org/map/act) are excellent resources for both browsing data via interactive maps and for downloading data.
+- The [WWARN Artemisinin Molecular Surveyor](https://visualizer.iddo.org/map/k13) and the closely related [WWARN Partner Drug Molecular Surveyor](https://visualizer.iddo.org/map/act) are excellent resources for both browsing data via interactive maps and for downloading data.
 - The [WHO Malaria Threats Map](https://tinyurl.com/3vxkmwup) is another great tool for browsing and downloading data on molecular markers of resistance, pfhrp2/3 deletion data, and more.
-- The [MalariaGen Pf8](https://www.malariagen.net/data_package/open-dataset-plasmodium-falciparum-v80/) project contains data on more than 30,000 samples. As well as whole genome data, this contains a series of smaller files specifically focused on markers of resistance.
+- [MalariaGen Pf8](https://www.malariagen.net/data_package/open-dataset-plasmodium-falciparum-v80/) project contains data on more than 30,000 samples. As well as whole genome data, this contains a series of smaller files specifically focused on markers of resistance.
+- The [paper by Wernsman Young & Meier-Scherling et al. (2025)](https://www.medrxiv.org/content/10.64898/2025.12.22.25342873v1.supplementary-material) contains as a supplementary material a large dataset on DR markers (k13, crt 76, and mdr1 86). The same data are available as a neatly packaged [STAVE](https://mrc-ide.github.io/STAVE/) object in the [Github repository associated with the paper](https://github.com/IDEELResearch/scrub/tree/main/analysis/data-out).
+
+## Spatial-temporal Analysis Methods
+
+- The [STAVE](https://mrc-ide.github.io/STAVE/) package, while not a spatial inference package *per se*, can be nice way to organize data prior to spatial-temporal analysis.
+- [R-INLA](https://davidbolin.github.io/rSPDE/articles/rspde_inla.html) is currently one of the most popular methods for fitting Gaussian-process-based models to data. It makes some approximations and so should be used with some caution, but it is a fast and nicely documented.
+- [PrevMap](https://www.jstatsoft.org/article/view/v078i08) is another nice R package for likelihood-based and Bayesian fitting of geospatial models.
 
